@@ -6,6 +6,7 @@
 
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
+<%@taglib prefix="ct" uri="/WEB-INF/tlds/UserNameTLD.tld" %>
 <!DOCTYPE html>
 <html>
 <head>
@@ -29,26 +30,27 @@
 		</table>
 		<br>
 		<font align='center' color='darkblue' size='+1'>Please select the hotel in which you would like to stay:<br><br>
-			<form action='<c:url value="SessionServlet"/>' name='MyForm' Method='POST'>
+			<form action='<c:url value="SessionServlet"></c:url>' name='MyForm' Method='POST'>
 			<table cellspacing='10' align='center' border='2' border color='black'>
 				<tr>
-					<td bordercolor='white'>Select Destination:</td>
-					<td bordercolor='white'
-					<select name='HotelName'>
-					<option value='Sea View'>Hotel Sea View</option>
-					<option value='Sea Breeze'>Hotel Sea Breeze</option>
+                                    <td bordercolor="white"><font color="black">Select Hotel:</font></td>
+                                    <td bordercolor="white">
+					<select name="HotelName">
+					<option value="Sea View">Hotel Sea View</option>
+					<option value="Sea Breeze">Hotel Sea Breeze</option>
+                                            </select>
 				</td>
 			</tr>
 			<tr>
-			<td bordercolor='white'>Number of days: </td>
-			<td bordercolor='white'><input type='text' name='numOfDays'>
+			<td bordercolor="white">Number of days: </td>
+                        <td bordercolor="white"><input type="text" name="numOfDays"</td>  
 			</td></tr>
 			<tr>
 				
 					<td bordercolor='white'>
-		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type='submit' Value='Next'></input></a>
-					<input type='hidden' value='Destination 'Page name'/>
+                                            	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="submit" value="Next"></input></a>
+					<input type="hidden" value="Hotels" name="PageName"/>
                                         </td></tr></table></form>
 </body>
 </html>

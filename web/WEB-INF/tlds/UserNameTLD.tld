@@ -21,8 +21,8 @@
       </listener>
     -->
   <tag>
-    <name>NewTagHandler</name>
-    <tag-class>exoticatravels.NewTagHandler</tag-class>
+    <name>UserNameTagHandler</name>
+    <tag-class>exoticatravels.UserNameTagHandler</tag-class>
     <body-content>scriptless</body-content>
   </tag>
 </taglib>

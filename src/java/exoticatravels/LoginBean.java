@@ -19,28 +19,30 @@ public class LoginBean extends org.apache.struts.action.ActionForm
 			super();
 			//TODO auto-generated constructor stub
 		}
-	public String getPassword()
-	{
-		return password;
-	}
-	public void setPassword(String password)
-	{
-		this.password = password;
-	}
-	public String getR1()
-	{
-		return r1;
-	}
-	public void setR1(String r1)
-	{
-		this.r1=r1;
-	}
-	public String getUserid()
-	{
-		return userid;
-	}
-	public void setUserid(String userid)
-	{
-		this.userid=userid;
-	}
+
+    public String getUserid() {
+        return userid;
+    }
+
+    public void setUserid(String userid) {
+        this.userid = userid;
+    }
+
+    public String getPassword() {
+        return password;
+    }
+
+    public void setPassword(String password) {
+        this.password = password;
+    }
+
+    public String getR1() {
+        return r1;
+    }
+
+    public void setR1(String r1) {
+        this.r1 = r1;
+    }
+	
 }
+

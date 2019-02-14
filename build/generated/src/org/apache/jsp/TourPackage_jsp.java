@@ -11,6 +11,11 @@ public final class TourPackage_jsp extends org.apache.jasper.runtime.HttpJspBase
 
   private static java.util.List<String> _jspx_dependants;
 
+  static {
+    _jspx_dependants = new java.util.ArrayList<String>(1);
+    _jspx_dependants.add("/WEB-INF/tlds/UserNameTLD.tld");
+  }
+
   private org.apache.jasper.runtime.TagHandlerPool _jspx_tagPool_c_url_value_nobody;
 
   private org.glassfish.jsp.api.ResourceInjector _jspx_resourceInjector;
@@ -65,7 +70,7 @@ public final class TourPackage_jsp extends org.apache.jasper.runtime.HttpJspBase
       org.apache.jasper.runtime.JspRuntimeLibrary.include(request, response, "Template.jsp", out, false);
       out.write("\n");
       out.write("\t<td valign=\"top\" rowspan=\"200\" colspan=\"80\">\n");
-      out.write("\t\t<table>\n");
+      out.write("<table style=\"width: 100%\">\n");
       out.write("\t\t\t<tr>\n");
       out.write("\t\t\t<td><font color='darkblue' size='+1'><a href='");
       if (_jspx_meth_c_url_0(_jspx_page_context))
@@ -89,7 +94,9 @@ public final class TourPackage_jsp extends org.apache.jasper.runtime.HttpJspBase
       out.write("'>Tour Packages</a></td>\n");
       out.write("                         <td width=\"350\">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\n");
       out.write("                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>\n");
-      out.write("                        <ct:UserNameTagHandler/>\n");
+      out.write("                        ");
+      if (_jspx_meth_ct_UserNameTagHandler_0(_jspx_page_context))
+        return;
       out.write("                        \n");
       out.write("\t\t\t</tr>\n");
       out.write("\t\t</table>\n");
@@ -100,25 +107,25 @@ public final class TourPackage_jsp extends org.apache.jasper.runtime.HttpJspBase
       out.write("\t\t\t<form action='");
       if (_jspx_meth_c_url_5(_jspx_page_context))
         return;
-      out.write("' name='MyForm' Method='POST'>\n");
-      out.write("\t\t\t<table cellspacing='10' align='center' border='2' border color='black'>\n");
+      out.write("'name='MyForm' Method='POST'>\n");
+      out.write("\t\t\t<table cellspacing='10' align='center' border='4' border color='black'>\n");
       out.write("\t\t\t\t<tr>\n");
       out.write("\t\t\t\t\t<td bordercolor='white'><font color='darkblue'>Select Destination:\n");
       out.write("\t\t\t\t\t</font></td>\n");
-      out.write("\t\t\t\t\t<td bordercolor='white'\n");
-      out.write("\t\t\t\t\t<select name='Destination'>\n");
-      out.write("\t\t\t\t\t<option value='Switzerland'>Switzerland</option>\n");
-      out.write("\t\t\t\t\t<option value='Bahamas'>Bahamas</option>\n");
-      out.write("\t\t\t\t\t<option value='Thailand'>Thailand</option>\n");
-      out.write("\t\t\t\t\t<option value='Australia'>Australia</option>\n");
-      out.write("\t\t\t\t\t</select>\n");
-      out.write("\t\t<input type='hidden' value='Destination' name='PageName'/>\n");
-      out.write("\t</td>\n");
+      out.write("                                        <td bordercolor=\"white\">\n");
+      out.write("\t\t\t\t\t<select name=\"Destination\">\n");
+      out.write("\t\t\t\t\t<option value=\"Switzerland\">Switzerland</option>\n");
+      out.write("\t\t\t\t\t<option value=\"Bahamas\">Bahamas</option>\n");
+      out.write("\t\t\t\t\t<option value=\"Thailand\">Thailand</option>\n");
+      out.write("                                        <option value=\"Australia\">Australia</option></select>\n");
+      out.write("\t\t\t\t\t\n");
+      out.write("\t\t<input type=\"hidden\" value=\"Destination\" name=\"PageName\"/>\n");
+      out.write("\t\n");
       out.write("</tr>\n");
       out.write("\t<tr>\n");
       out.write("\t\t<td bordercolor='white'>\n");
       out.write("\t\t&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\n");
-      out.write("\t\t&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type='submit' Value='Next'></input></a>\n");
+      out.write("\t\t&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type='submit' value=\"Next\">\n");
       out.write("</td>\n");
       out.write("</tr>\n");
       out.write("</table>\n");
@@ -225,6 +232,17 @@ public final class TourPackage_jsp extends org.apache.jasper.runtime.HttpJspBase
       return true;
     }
     _jspx_tagPool_c_url_value_nobody.reuse(_jspx_th_c_url_4);
+    return false;
+  }
+
+  private boolean _jspx_meth_ct_UserNameTagHandler_0(PageContext _jspx_page_context)
+          throws Throwable {
+    PageContext pageContext = _jspx_page_context;
+    JspWriter out = _jspx_page_context.getOut();
+    //  ct:UserNameTagHandler
+    exoticatravels.UserNameTagHandler _jspx_th_ct_UserNameTagHandler_0 = (_jspx_resourceInjector != null) ? _jspx_resourceInjector.createTagHandlerInstance(exoticatravels.UserNameTagHandler.class) : new exoticatravels.UserNameTagHandler();
+    _jspx_th_ct_UserNameTagHandler_0.setJspContext(_jspx_page_context);
+    _jspx_th_ct_UserNameTagHandler_0.doTag();
     return false;
   }
 

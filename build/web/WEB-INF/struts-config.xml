@@ -29,7 +29,10 @@
             <forward name="admin" path="/WelcomeAdminPage.jsp"/>
             <forward name="customer" path="/WelcomeCustomerPage.jsp"/>
             <forward name="error" path="/ErrorPage.jsp"/></action>          
-        <action input="/RegistrationPage.jsp" name="RegistrationBean" path="/RegistrationAction" scope="request" type="exoticatravels.RegistrationAction"/>           
+        <action input="/RegistrationPage.jsp" name="RegistrationBean" path="/RegistrationAction" scope="request" type="exoticatravels.RegistrationAction">
+            <forward name="success" path="/WelcomeUser.jsp"/>
+            <forward name="error" path="/RegistrationErrors.jsp"/>
+        </action>           
     </action-mappings>
     
     <controller processorClass="org.apache.struts.tiles.TilesRequestProcessor"/>

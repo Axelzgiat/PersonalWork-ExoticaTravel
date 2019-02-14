@@ -30,7 +30,7 @@ public class ValidateAction extends org.apache.struts.action.Action {
             String userid=lb.getUserid();
             String password=lb.getPassword();
             String role=lb.getR1();
-            if(userid.equals("admin")&& password.equals("password@123")&& role.equals("administrator"))
+            if(userid.equals("admin")&& password.equals("password123")&& role.equals("administrator"))
             {
                 HttpSession session =request.getSession();
                 session.setAttribute("User",userid);

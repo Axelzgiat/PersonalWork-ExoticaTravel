@@ -1,9 +1,10 @@
+package exoticatravels;
+
 /*
  * To change this license header, choose License Headers in Project Properties.
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package exoticatravels;
 
 import java.io.IOException;
 import java.io.PrintWriter;
@@ -15,11 +16,12 @@ import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.*;
 import javax.servlet.RequestDispatcher;
 
+
 /**
  *
- * @author axelzgiat
+ * @author 10
  */
-@WebServlet(name = "SessionServlet", urlPatterns = {"/SessionServlet"})
+@WebServlet(urlPatterns = {"/SessionServlet"})
 public class SessionServlet extends HttpServlet {
 
     /**
@@ -35,32 +37,31 @@ public class SessionServlet extends HttpServlet {
             throws ServletException, IOException {
         response.setContentType("text/html;charset=UTF-8");
         try (PrintWriter out = response.getWriter()) {
-            /* TODO output your page here. You may use following sample code. */
-            HttpSession session=request.getSession(false);
-            String requestingPageName= request.getParameter("PageName");
-            if(requestingPageName.equals("Destination"))
-            {
-                String selectedDestination = request.getParameter("Destination");
-                session.setAttribute("selDestination", selectedDestination);
-                RequestDispatcher dispatch = request.getRequestDispatcher("Hotels.jsp");
-                dispatch.forward(request,response);
-            }
-            else if(requestingPageName.equals("Hotels"))
-            {
-                String selectedHotel=request.getParameter("HotelName");
-                String noOfDays = request.getParameter("numOfDays");
-                session.setAttribute("selHotel", selectedHotel);
-                session.setAttribute("numDays", noOfDays);
-                RequestDispatcher dispatch = request.getRequestDispatcher("Flights.jsp");
-                dispatch.forward(request,response);
-            }
-            else if(requestingPageName.equals("FlightsServlet"))
-            {
-                String selectedAirline=request.getParameter("Airline");
-                session.setAttribute("selAirline", selectedAirline);
-                RequestDispatcher dispatch = request.getRequestDispatcher("Cart.jsp");
-                dispatch.forward(request, response);
-            }
+           HttpSession session = request.getSession(false);
+           String requestingPageName = request.getParameter("PageName");
+           if(requestingPageName.equals("Destination"))
+           {
+               String selectedDestination = request.getParameter("Destination");
+               session.setAttribute("selDestination", selectedDestination);
+               RequestDispatcher dispatch = request.getRequestDispatcher("Hotels.jsp");
+               dispatch.forward(request, response);
+           }
+           else if(requestingPageName.equals("Hotels"))
+           {
+               String selectedHotel = request.getParameter("HotelName");
+            String noOfDays = request.getParameter("numOfDays");
+            session.setAttribute("selHotel", selectedHotel);
+            session.setAttribute("numOfDays", noOfDays);
+            RequestDispatcher dispatch = request.getRequestDispatcher("Flights.jsp");
+            dispatch.forward(request, response);
+           }
+           else if(requestingPageName.equals("Flights"))
+           {
+               String selectedAirline = request.getParameter("Airline");
+            session.setAttribute("selAirline", selectedAirline);
+            RequestDispatcher dispatch = request.getRequestDispatcher("Cart.jsp");
+            dispatch.forward(request, response);
+           }
         }
     }
 
@@ -102,5 +103,4 @@ public class SessionServlet extends HttpServlet {
     public String getServletInfo() {
         return "Short description";
     }// </editor-fold>
-
 }

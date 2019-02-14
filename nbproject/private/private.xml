@@ -3,22 +3,19 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
-            <file>file:/D:/Kuliah/Politeknik%20Negeri%20Medan/Mr.%20Handri%20Sunjaya/sem5/ExoticaTravels/web/WelcomeAdminPage.jsp</file>
-            <file>file:/D:/Kuliah/Politeknik%20Negeri%20Medan/Mr.%20Handri%20Sunjaya/sem5/ExoticaTravels/web/WelcomeCustomerPage.jsp</file>
+            <file>file:/D:/Kuliah/Politeknik%20Negeri%20Medan/Mr.%20Handri%20Sunjaya/sem5/ExoticaTravels/web/META-INF/context.xml</file>
             <file>file:/D:/Kuliah/Politeknik%20Negeri%20Medan/Mr.%20Handri%20Sunjaya/sem5/ExoticaTravels/web/RegistrationPage.jsp</file>
-            <file>file:/D:/Kuliah/Politeknik%20Negeri%20Medan/Mr.%20Handri%20Sunjaya/sem5/ExoticaTravels/web/Template.jsp</file>
             <file>file:/D:/Kuliah/Politeknik%20Negeri%20Medan/Mr.%20Handri%20Sunjaya/sem5/ExoticaTravels/web/Flights.jsp</file>
-            <file>file:/D:/Kuliah/Politeknik%20Negeri%20Medan/Mr.%20Handri%20Sunjaya/sem5/ExoticaTravels/src/java/exoticatravels/RegistrationPage.java</file>
-            <file>file:/D:/Kuliah/Politeknik%20Negeri%20Medan/Mr.%20Handri%20Sunjaya/sem5/ExoticaTravels/src/java/exoticatravels/RegistrationBean.java</file>
-            <file>file:/D:/Kuliah/Politeknik%20Negeri%20Medan/Mr.%20Handri%20Sunjaya/sem5/ExoticaTravels/src/java/exoticatravels/GetLogDetails.java</file>
-            <file>file:/D:/Kuliah/Politeknik%20Negeri%20Medan/Mr.%20Handri%20Sunjaya/sem5/ExoticaTravels/web/WEB-INF/struts-config.xml</file>
+            <file>file:/D:/Kuliah/Politeknik%20Negeri%20Medan/Mr.%20Handri%20Sunjaya/sem5/ExoticaTravels/web/WEB-INF/web.xml</file>
             <file>file:/D:/Kuliah/Politeknik%20Negeri%20Medan/Mr.%20Handri%20Sunjaya/sem5/ExoticaTravels/web/HomePage.jsp</file>
-            <file>file:/D:/Kuliah/Politeknik%20Negeri%20Medan/Mr.%20Handri%20Sunjaya/sem5/ExoticaTravels/src/java/exoticatravels/HomePage.java</file>
-            <file>file:/D:/Kuliah/Politeknik%20Negeri%20Medan/Mr.%20Handri%20Sunjaya/sem5/ExoticaTravels/src/java/exoticatravels/LoginServlet.java</file>
+            <file>file:/D:/Kuliah/Politeknik%20Negeri%20Medan/Mr.%20Handri%20Sunjaya/sem5/ExoticaTravels/web/TourPackage.jsp</file>
+            <file>file:/D:/Kuliah/Politeknik%20Negeri%20Medan/Mr.%20Handri%20Sunjaya/sem5/ExoticaTravels/build/web/WEB-INF/tlds/UserNameTLD.tld</file>
+            <file>file:/D:/Kuliah/Politeknik%20Negeri%20Medan/Mr.%20Handri%20Sunjaya/sem5/ExoticaTravels/web/RegistrationErrors.jsp</file>
+            <file>file:/D:/Kuliah/Politeknik%20Negeri%20Medan/Mr.%20Handri%20Sunjaya/sem5/ExoticaTravels/src/java/exoticatravels/ValidateAction.java</file>
+            <file>file:/D:/Kuliah/Politeknik%20Negeri%20Medan/Mr.%20Handri%20Sunjaya/sem5/ExoticaTravels/src/java/exoticatravels/SessionServlet.java</file>
+            <file>file:/D:/Kuliah/Politeknik%20Negeri%20Medan/Mr.%20Handri%20Sunjaya/sem5/ExoticaTravels/web/Cart.jsp</file>
             <file>file:/D:/Kuliah/Politeknik%20Negeri%20Medan/Mr.%20Handri%20Sunjaya/sem5/ExoticaTravels/web/Hotels.jsp</file>
-            <file>file:/D:/Kuliah/Politeknik%20Negeri%20Medan/Mr.%20Handri%20Sunjaya/sem5/ExoticaTravels/web/ErrorPage.jsp</file>
-            <file>file:/D:/Kuliah/Politeknik%20Negeri%20Medan/Mr.%20Handri%20Sunjaya/sem5/ExoticaTravels/web/LoginPage.jsp</file>
-            <file>file:/D:/Kuliah/Politeknik%20Negeri%20Medan/Mr.%20Handri%20Sunjaya/sem5/ExoticaTravels/src/java/exoticatravels/IPFilter.java</file>
+            <file>file:/D:/Kuliah/Politeknik%20Negeri%20Medan/Mr.%20Handri%20Sunjaya/sem5/ExoticaTravels/src/java/exoticatravels/RegistrationAction.java</file>
         </group>
     </open-files>
 </project-private>

@@ -26,7 +26,7 @@
                   <span class="icon-bar"></span>
                   <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="#">E X O T I C A  T R A V E L by Giat Alexander Silaban</a>
+                <a class="navbar-brand" href="HomePage.jsp">E X O T I C A  T R A V E L by Giat Alexander Silaban</a>
               </div>
  
               <!-- Collect the nav links, forms, and other content for toggling -->
